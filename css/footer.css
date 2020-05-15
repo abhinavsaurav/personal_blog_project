@@ -1,0 +1,21 @@
+
+.footer{
+    grid-area:foot;
+    background-color: rgb(50, 205, 192);
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* text-align: center; */
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid black;
+}
+
+.foot-content{
+    /* //width:100vw; */
+   /* // padding:6px; */
+    /* height:5vh; */
+    align-items: center;
+    justify-content: center;
+   /* // border:1px solid black; */
+}

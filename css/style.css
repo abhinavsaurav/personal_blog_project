@@ -1,8 +1,10 @@
+@import url(header.css);
+@import url(footer.css);
 body{
     padding:0;
     margin:0;
     /* border:1px solid blue; */
-    /* background-color: yellowgreen; */
+    background-color: rgb(50, 205, 192);
 }
 
 .container{
@@ -22,32 +24,6 @@ body{
 .box2{
     border:2px solid white;
 } */
-.header{
-    grid-area:head;
-    background-color: yellow;
-    border-bottom: 1px solid black;
-}
-
-.footer{
-    grid-area:foot;
-    background-color: yellowgreen;
-    display:flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    /* text-align: center; */
-    justify-content: center;
-    align-items: center;
-    border-top: 1px solid black;
-}
-
-.foot-content{
-    /* //width:100vw; */
-    padding:6px;
-    height:5vh;
-    align-items: center;
-    justify-content: center;
-   /* // border:1px solid black; */
-}
 
 .nested-container{
     grid-area:main;
@@ -65,15 +41,16 @@ body{
     grid-area:sbar;
     border-left:1px solid black;
     border-right:1px solid black;
+    background-color: rgb(208, 233, 240);
     display:flex;
     flex-direction: column;
     align-items: stretch;
     justify-items: center;
     overflow: auto;
 }
+
 .category{
     border-bottom:1px solid black;
-    
     padding: 5px;
 }
 
@@ -85,9 +62,10 @@ body{
     display:flex;
     flex-direction: column;
     flex-wrap: wrap;
-    border:1px solid yellow;
+    border:1px solid rgb(241, 241, 214);
     justify-content: center;
     align-items: center;
+    
 }
 
 .game-r6s{
@@ -98,7 +76,7 @@ body{
     display:flex;
     flex-direction: column;
     flex-wrap: wrap;
-    border:1px solid yellow;
+    border:1px solid rgb(241, 241, 214);
     justify-content: center;
     align-items: center;
 }
@@ -111,7 +89,7 @@ body{
     display:flex;
     flex-direction: column;
     flex-wrap: wrap;
-    border:1px solid yellow;
+    border:1px solid rgb(241, 241, 214);
     justify-content: center;
     align-items: center;
 }
@@ -140,46 +118,14 @@ body{
     }
 }
 
-.head-container{
-    display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    /* //justify-items: center; */
-}
 
-.head-content1{
-    flex:80;
-    display:inline-block;
-    padding: 15px;
-    background-color: yellow;
-   
-}
-.head-content2{
-    flex:5;
-    display:inline-block;
-    padding:15px;
-    text-align:center;
-    background-color:yellow;
-}
-.head-content3{
-    flex: 5;
-    display:inline-block;
-    padding:15px;
-    text-align:center;
-    background-color:yellow;
-}
-
-.right_float{
-    
-    float:right;
-}
-
+/* 
 .fortnite{
     width: 50%;
     border:1px solid white;
     color:white;
     font-weight: bold;
+    border
 }
 
 .r6s{
@@ -194,9 +140,28 @@ body{
     border:1px solid white;
     color:white;
     font-weight: bold;
+} */
+
+.game-box-text{
+    width: 50%;
+    border:1px solid white;
+    color:white;
+    font-weight: bold;
+    border-radius: 10px;
+
+}
+.game-box-text:hover{
+    box-shadow: 4px 8px 8px 4px rgba(255, 255, 255, 0.295), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+    /* filter:blur(0px); */
+
+    background-color: rgba(0,0,0, 0.4);
 }
 
-/* Typography */
-.typo{
-    font-family: ;
-}
+/* .hover-try{
+    filter:blur(0px);
+} */
+
+ /* .game-fortnite:hover{
+    filter:blur(2px);
+
+ } */
