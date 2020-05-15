@@ -1,0 +1,184 @@
+body{
+    padding:0;
+    margin:0;
+    /* border:1px solid blue; */
+    /* background-color: yellowgreen; */
+}
+
+.container{
+    display:grid;
+    grid-template-columns:100%;
+    grid-template-rows:10vh 80vh 10vh;
+    grid-template-areas:
+    "head"
+    "main"
+    "foot"; 
+    
+}
+/* 
+.box{
+    border:1px solid red;
+}
+.box2{
+    border:2px solid white;
+} */
+.header{
+    grid-area:head;
+    background-color: yellow;
+    border-bottom: 1px solid black;
+}
+
+.footer{
+    grid-area:foot;
+    background-color: yellowgreen;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+
+}
+
+.foot-content{
+    /* //width:100vw; */
+    padding:6px;
+    height:5vh;
+    align-items: center;
+    justify-content: center;
+   /* // border:1px solid black; */
+}
+
+.nested-container{
+    grid-area:main;
+    display:grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 20vh 20vh 20vh 20vh;
+    grid-template-areas:
+        "sbar"
+        "gcard1"
+        "gcard2"
+        "gcard3";
+}
+
+.categories{
+    grid-area:sbar;
+    border:1px solid yellow;
+}
+
+.game-fortnite{
+    grid-area:gcard1;
+    background-image: url(../image/fortnite2.png);
+    background-repeat: round;
+    background-size: 100% 100%;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border:1px solid yellow;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-r6s{
+    grid-area:gcard2;
+    background-image: url(../image/r6s.jpg);
+    background-size: 100% 100%;
+    background-repeat: round;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border:1px solid yellow;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-minecraft{
+    grid-area:gcard3;
+    background-image: url(../image/minecraft.jpg);
+    background-size: 100% 100%;
+    background-repeat: round;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border:1px solid yellow;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(min-width:900px){
+    .container{
+        display:grid;
+        grid-template-columns:100%;
+        grid-template-rows:7vh 88vh 5vh;
+        grid-template-areas:
+        "head"
+        "main"
+        "foot";
+    }
+ 
+    .nested-container{
+        grid-area:main;
+        display:grid;
+        grid-template-columns:10% 10% 20% 20% 20% 20%;
+        grid-template-rows:44vh 44vh;
+        grid-template-areas:
+        "sbar sbar gcard1 gcard1 gcard1 gcard1"
+        "sbar sbar gcard2 gcard2 gcard3 gcard3";
+        
+        
+    }
+}
+
+.head-container{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+  
+}
+
+.head-content1{
+    flex:80;
+    display:inline-block;
+    padding: 10px;
+    background-color: yellow;
+   
+}
+.head-content2{
+    flex:5;
+    display:inline-block;
+    padding:10px;
+    text-align:center;
+    background-color:yellow;
+}
+.head-content3{
+    flex: 5;
+    display:inline-block;
+    padding:10px;
+    text-align:center;
+    background-color:yellow;
+}
+
+.right_float{
+    
+    float:right;
+}
+
+.fortnite{
+    width: 50%;
+    border:1px solid white;
+    color:white;
+    font-weight: bold;
+}
+
+.r6s{
+    width:50%;
+    border:1px solid white;
+    color:white;
+    font-weight: bold;
+}
+
+.minecraft{
+    width:50%;
+    border:1px solid white;
+    color:white;
+    font-weight: bold;
+}
