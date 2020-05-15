@@ -1,10 +1,10 @@
 @import url(header.css);
 @import url(footer.css);
+@import url(textography.css);
+
 body{
     padding:0;
     margin:0;
-    /* border:1px solid blue; */
-    background-color: rgb(50, 205, 192);
 }
 
 .container{
@@ -17,13 +17,6 @@ body{
     "foot"; 
     
 }
-/* 
-.box{
-    border:1px solid red;
-}
-.box2{
-    border:2px solid white;
-} */
 
 .nested-container{
     grid-area:main;
@@ -37,6 +30,24 @@ body{
         "gcard3";
 }
 
+.nested-container-blog-post{
+    grid-area:main;
+    display:grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 20vh 60vh;
+    grid-template-areas: 
+        "pic"
+        "author"
+    ;
+}
+
+img{
+    width:100vw;
+    max-height:100%;
+    height:88vh;
+}
+
+
 .categories{
     grid-area:sbar;
     border-left:1px solid black;
@@ -47,11 +58,12 @@ body{
     align-items: stretch;
     justify-items: center;
     overflow: auto;
+    text-align: center;
 }
 
 .category{
     border-bottom:1px solid black;
-    padding: 5px;
+    padding: 8px;
 }
 
 .game-fortnite{
@@ -83,7 +95,7 @@ body{
 
 .game-minecraft{
     grid-area:gcard3;
-    background-image: url(../image/minecraft.jpg);
+    background-image: url(../image/minecraft2.jpg);
     background-size: 100% 100%;
     background-repeat: round;
     display:flex;
@@ -92,6 +104,18 @@ body{
     border:1px solid rgb(241, 241, 214);
     justify-content: center;
     align-items: center;
+}
+
+.game-box-text{
+    width: 50%;
+    border:1px solid white;
+    color:white;
+    font-weight: bold;
+    border-radius: 10px;
+    text-align:center;
+    padding:0 10px 0 10px;
+    font-size: 0.5em;
+    padding-bottom:1px;
 }
 
 @media(min-width:900px){
@@ -113,55 +137,37 @@ body{
         grid-template-areas:
         "sbar sbar gcard1 gcard1 gcard1 gcard1"
         "sbar sbar gcard2 gcard2 gcard3 gcard3";
-        
-        
+    }
+
+    .nested-container-blog-post{
+        grid-area:main;
+        display:grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 88vh;
+        grid-template-areas: 
+            "pic author";
+    }
+    
+    img{
+        max-width:100%;
+        height:88vh;
+    }
+
+    .game-box-text{
+        width: 50%;
+        border:1px solid white;
+        color:white;
+        font-weight: bold;
+        border-radius: 10px;
+        text-align:center;
+        padding:10px;
+        font-size: 1.1em;
+        line-height: 1.2;
     }
 }
 
 
-/* 
-.fortnite{
-    width: 50%;
-    border:1px solid white;
-    color:white;
-    font-weight: bold;
-    border
-}
-
-.r6s{
-    width:50%;
-    border:1px solid white;
-    color:white;
-    font-weight: bold;
-}
-
-.minecraft{
-    width:50%;
-    border:1px solid white;
-    color:white;
-    font-weight: bold;
-} */
-
-.game-box-text{
-    width: 50%;
-    border:1px solid white;
-    color:white;
-    font-weight: bold;
-    border-radius: 10px;
-
-}
 .game-box-text:hover{
     box-shadow: 4px 8px 8px 4px rgba(255, 255, 255, 0.295), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
-    /* filter:blur(0px); */
-
     background-color: rgba(0,0,0, 0.4);
 }
-
-/* .hover-try{
-    filter:blur(0px);
-} */
-
- /* .game-fortnite:hover{
-    filter:blur(2px);
-
- } */

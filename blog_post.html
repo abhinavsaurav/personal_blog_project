@@ -1,14 +1,102 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>Blog Homepage</title>
-        <meta name="description" content="Blog-homepage">
+        <title>Blog Post</title>
+        <meta name="description" content="Blog-post">
         <meta name="author" content="Abhinav Saurav">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/blog_post.css"/>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     </head>
     <body>
-        <p>Hello World!</p>
+        <div class="container box">
+            <header class="header box">
+                <nav>
+                    <div class="head-container">
+                        <div class="head-content1">Gamer Nation</div>
+                        <div class="head-content2">
+                            <a href="index.html">Home</a>
+                        </div>
+                        <div class="head-content3">
+                            <a href="blog_post.html">Blog</a>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <div class="nested-container-blog-post box">
+                <div class="game-pic">
+                    <img src="image/fortnite3.jpg" alt="fortnite-pic"/>
+                </div>
+                <div class="game-blog">
+                    <div class="game-blog-header">
+                        <h1>Fortnite</h1>
+                        <h2>Bob Marley | 15/05/20</h2>
+                    </div>
+                    <div class="game-blog-author">
+                        <div class="author-image">
+                            <img src="image/author.jpg" alt="author" />
+                        </div>
+                        <div class="author-data">
+                            <h3>
+                                <p>
+                                    Bob Marley is a game blogger. He works at MemeLabs.
+                                    Born in the United States. He developed a interest for 
+                                    both writing and gaming.
+                                </p>
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="game-blog-content">
+                        <section class="text-content">
+                            <p>
+                                Fortnite is an online shooter game where around 100 people are pitted against each other on a small island in a fight to the death until one person is left standing.
+                                A lot of time and in some cases money has been invested, particularly by the most hardcore players.
+                                so people are wondering if this is the end of Fortnite, or just the start of a new season of the 
+                                game (a season lasts around 10 weeks).
+                            </p>
+                            <p>
+                                It’s so popular, particularly with kids, 
+                                because it’s free, easy to use and doesn’t really take itself seriously with blood and gore and lots of things that you 
+                                often get in other huge online games. Also, it’s kind of addictive.
+                            </p>
+                            <blockquote>
+                                <i>" It’s so popular, particularly with kids, 
+                                because it’s free, easy to use and doesn’t really take itself seriously with blood and gore and lots of things that you 
+                                often get in other huge online games. Also, it’s kind of addictive. "</i>
+                            </blockquote>
+                            <p>
+                                <img src="image/fortnite.jpg" alt="fortnite-bye"/>
+                            </p>
+                            <p>
+                                Epic Games reportedly makes up to about US$300m per month from it. That’s largely from players spending money in the game, on outfits and various items for their characters; as well as from the battle pass system, where people pay at least US$10 (or 950 v-bucks, in the in-game currency) for challenges that allow them to unlock extra content.
+                            </p>
+                            <p>
+                                In terms of how much people invest in the game, it’s less of an issue than loot boxes (where people pay real money for mystery in-game prizes) – but a law firm in Canada recently launched a lawsuit against Epic Games, claiming Fortnite operated in a similar way to slot machines, and was as addictive as cocaine.
+                            </p>
+                            <p>
+                                In July, people competed for US $30m in prize money at the <span>Fortnite world cup</span> – and you’ve probably seen some of the memes for Fortnite without even realising. Do you remember Ted Danson flossing? Yeah that’s Fortnite.
+                            </p>
+                        </section>
+                        <section class="share">
+                            <div id="fb-root"></div>
+                            <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v7.0"></script>
+                            <div class="fb-share-button same-line" data-href="https://www.facebook.com/" data-layout="button" data-size="small">
+                                <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">share</a>
+                            </div>
+                            <div class="same-line"><a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a>
+                                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                            </div>
+                            <script src="https://platform.linkedin.com/in.js" type="text/javascript">lang: en_US</script>
+                            <script type="IN/Share" data-url="https://www.linkedin.com"></script>
+                        </section>
+                    </div>
+                </div>
+            </div>    
+            <footer class="footer box">
+                <div class="foot-content disp">Designed by Abhinav Saurav</div>
+            </footer>
+        </div>
     </body>
 </html>
