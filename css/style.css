@@ -2,172 +2,167 @@
 @import url(footer.css);
 @import url(textography.css);
 
-body{
-    padding:0;
-    margin:0;
+body {
+	padding: 0;
+	margin: 0;
 }
 
-.container{
-    display:grid;
-    grid-template-columns:100%;
-    grid-template-rows:10vh 80vh 10vh;
-    grid-template-areas:
-    "head"
-    "main"
-    "foot"; 
-    
+.container {
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: 10vh 80vh 10vh;
+	grid-template-areas:
+		"head"
+		"main"
+		"foot";
 }
 
-.nested-container{
-    grid-area:main;
-    display:grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 20vh 20vh 20vh 20vh;
-    grid-template-areas:
-        "sbar"
-        "gcard1"
-        "gcard2"
-        "gcard3";
+.nested-container {
+	grid-area: main;
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: 20vh 20vh 20vh 20vh;
+	grid-template-areas:
+		"sbar"
+		"gcard1"
+		"gcard2"
+		"gcard3";
 }
 
-.nested-container-blog-post{
-    grid-area:main;
-    display:grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 20vh 60vh;
-    grid-template-areas: 
-        "pic"
-        "author"
-    ;
+.nested-container-blog-post {
+	grid-area: main;
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: 20vh 60vh;
+	grid-template-areas:
+		"pic"
+		"author";
 }
 
-img{
-    width:100vw;
-    max-height:100%;
-    height:88vh;
+img {
+	width: 100vw;
+	max-height: 100%;
+	height: 88vh;
 }
 
-
-.categories{
-    grid-area:sbar;
-    border-left:1px solid black;
-    border-right:1px solid black;
-    background-color: rgb(208, 233, 240);
-    display:flex;
-    flex-direction: column;
-    align-items: stretch;
-    justify-items: center;
-    overflow: auto;
-    text-align: center;
+.categories {
+	grid-area: sbar;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	background-color: rgb(208, 233, 240);
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	justify-items: center;
+	overflow: auto;
+	text-align: center;
 }
 
-.category{
-    border-bottom:1px solid black;
-    padding: 8px;
+.category {
+	border-bottom: 1px solid black;
+	padding: 8px;
 }
 
-.game-fortnite{
-    grid-area:gcard1;
-    background-image: url(../image/fortnite2.png);
-    background-repeat: round;
-    background-size: 100% 100%;
-    display:flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    border:1px solid rgb(241, 241, 214);
-    justify-content: center;
-    align-items: center;
-    
+.game-fortnite {
+	grid-area: gcard1;
+	background-image: url(../image/fortnite2.png);
+	background-repeat: round;
+	background-size: 100% 100%;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	border: 1px solid rgb(241, 241, 214);
+	justify-content: center;
+	align-items: center;
 }
 
-.game-r6s{
-    grid-area:gcard2;
-    background-image: url(../image/r6s.jpg);
-    background-size: 100% 100%;
-    background-repeat: round;
-    display:flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    border:1px solid rgb(241, 241, 214);
-    justify-content: center;
-    align-items: center;
+.game-r6s {
+	grid-area: gcard2;
+	background-image: url(../image/r6s.jpg);
+	background-size: 100% 100%;
+	background-repeat: round;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	border: 1px solid rgb(241, 241, 214);
+	justify-content: center;
+	align-items: center;
 }
 
-.game-minecraft{
-    grid-area:gcard3;
-    background-image: url(../image/minecraft2.jpg);
-    background-size: 100% 100%;
-    background-repeat: round;
-    display:flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    border:1px solid rgb(241, 241, 214);
-    justify-content: center;
-    align-items: center;
+.game-minecraft {
+	grid-area: gcard3;
+	background-image: url(../image/minecraft2.jpg);
+	background-size: 100% 100%;
+	background-repeat: round;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	border: 1px solid rgb(241, 241, 214);
+	justify-content: center;
+	align-items: center;
 }
 
-.game-box-text{
-    width: 50%;
-    border:1px solid white;
-    color:white;
-    font-weight: bold;
-    border-radius: 10px;
-    text-align:center;
-    padding:0 10px 0 10px;
-    font-size: 0.5em;
-    padding-bottom:1px;
+.game-box-text {
+	width: 50%;
+	border: 1px solid white;
+	color: white;
+	font-weight: bold;
+	border-radius: 10px;
+	text-align: center;
+	padding: 0 10px 0 10px;
+	font-size: 0.5em;
+	padding-bottom: 1px;
 }
 
-@media(min-width:900px){
-    .container{
-        display:grid;
-        grid-template-columns:100%;
-        grid-template-rows:7vh 88vh 5vh;
-        grid-template-areas:
-        "head"
-        "main"
-        "foot";
-    }
- 
-    .nested-container{
-        grid-area:main;
-        display:grid;
-        grid-template-columns:10% 10% 20% 20% 20% 20%;
-        grid-template-rows:44vh 44vh;
-        grid-template-areas:
-        "sbar sbar gcard1 gcard1 gcard1 gcard1"
-        "sbar sbar gcard2 gcard2 gcard3 gcard3";
-    }
+@media (min-width: 900px) {
+	.container {
+		display: grid;
+		grid-template-columns: 100%;
+		grid-template-rows: 7vh 88vh 5vh;
+		grid-template-areas:
+			"head"
+			"main"
+			"foot";
+	}
 
-    .nested-container-blog-post{
-        grid-area:main;
-        display:grid;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 88vh;
-        grid-template-areas: 
-            "pic author";
-    }
-    
-    img{
-        max-width:100%;
-        height:88vh;
-    }
+	.nested-container {
+		grid-area: main;
+		display: grid;
+		grid-template-columns: 10% 10% 20% 20% 20% 20%;
+		grid-template-rows: 44vh 44vh;
+		grid-template-areas:
+			"sbar sbar gcard1 gcard1 gcard1 gcard1"
+			"sbar sbar gcard2 gcard2 gcard3 gcard3";
+	}
 
-    .game-box-text{
-        width: 50%;
-        border:1px solid white;
-        color:white;
-        font-weight: bold;
-        border-radius: 10px;
-        text-align:center;
-        padding:10px;
-        font-size: 1.1em;
-        line-height: 1.2;
-    }
+	.nested-container-blog-post {
+		grid-area: main;
+		display: grid;
+		grid-template-columns: 50% 50%;
+		grid-template-rows: 88vh;
+		grid-template-areas: "pic author";
+	}
+
+	img {
+		max-width: 100%;
+		height: 88vh;
+	}
+
+	.game-box-text {
+		width: 50%;
+		border: 1px solid white;
+		color: white;
+		font-weight: bold;
+		border-radius: 10px;
+		text-align: center;
+		padding: 10px;
+		font-size: 1.1em;
+		line-height: 1.2;
+	}
 }
 
-
-.game-box-text:hover{
-    box-shadow: 4px 8px 8px 4px rgba(255, 255, 255, 0.295), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
-    background-color: rgba(0,0,0, 0.4);
+.game-box-text:hover {
+	box-shadow: 4px 8px 8px 4px rgba(255, 255, 255, 0.295),
+		0 6px 20px 0 rgba(255, 255, 255, 0.19);
+	background-color: rgba(0, 0, 0, 0.4);
 }

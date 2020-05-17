@@ -1,73 +1,70 @@
 /*  Textography */
 
-body{
-    font-family: 'Montserrat', sans-serif, Georgia;
+body {
+	font-family: "Montserrat", sans-serif, Georgia;
 }
 
 h1,
-h2{
-    text-align: center;
+h2 {
+	text-align: center;
 }
 
-h3{
-    padding:0;
-    margin:0;  
-    font-size: 0.6em;  
-    font-style: italic;
+h3 {
+	padding: 0;
+	margin: 0;
+	font-size: 0.6em;
+	font-style: italic;
 }
 
-.text-content{
-    padding:0;
-    margin:0;
-    word-spacing: 2pt;
+.text-content {
+	padding: 0;
+	margin: 0;
+	word-spacing: 2pt;
 }
 
-@media(min-width:900px){
-    h3{
-        font-size: 1.05em;
-        font-style: italic;
-    }
+@media (min-width: 900px) {
+	h3 {
+		font-size: 1.05em;
+		font-style: italic;
+	}
 }
 
-blockquote{
-    line-height:1.6;
-    font-weight: bold;
+blockquote {
+	line-height: 1.6;
+	font-weight: bold;
 }
 
-p{
-    line-height: 1.4;   
+p {
+	line-height: 1.4;
 }
 
-span{
-    text-decoration: underline;
+span {
+	text-decoration: underline;
 }
-
 
 /* Styling the buttons */
 
-a{
-    text-decoration: none;
-    display: inline-block;
-    color:white;
-    padding:10px;
-    border:0.5px solid coral;
-    border-radius: 20px;
-
+a {
+	text-decoration: none;
+	display: inline-block;
+	color: white;
+	padding: 10px;
+	border: 0.5px solid coral;
+	border-radius: 20px;
 }
 
-a:hover{
-    background-color: coral;
+a:hover {
+	background-color: coral;
 }
 
-header a{
-    border: 0px solid black;
-    padding: 0;
-    border-radius: 0;
-    display: inline-block;
-    color:black;
+header a {
+	border: 0px solid black;
+	padding: 0;
+	border-radius: 0;
+	display: inline-block;
+	color: black;
 }
-header a:hover{
-    background-color: black;
-    color:white;
+header a:hover {
+	background-color: black;
+	color: white;
 }
-
