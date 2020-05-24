@@ -91,7 +91,7 @@ img {
 
 .game-minecraft {
 	grid-area: gcard3;
-	background-image: url(../image/minecraft2.jpg);
+	background-image: url(../image/Minecraft2.jpg);
 	background-size: 100% 100%;
 	background-repeat: round;
 	display: flex;
